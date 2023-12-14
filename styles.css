@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+body {
+    background-color: #45474B;
+    font-family: 'Montserrat', sans-serif;
+}
+
+audio {
+    display: none;
+}
+
+/* сам плеер */
+.player-container {
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    margin-top: 20px;
+}
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #495E57;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.controls, .time-slider, .volume-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-button {
+    background-color: #f4cf14c0;
+    border: none;
+    border-radius: 50%;
+    color: #FFFFFF;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin-right:10px;
+}
+.control-button img {
+    position: relative;
+    top:1px;
+}
+.control-button:hover {
+    background-color: #F4CE14;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+
+
+
+#volume {
+    -webkit-appearance: none;
+    width: 100px;
+    background-color: #f0f0f0;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;
+    height: 5px;
+}
+
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #e7c100;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#volume::-webkit-slider-thumb:hover {
+    background-color: #F4CE14;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+#time {
+    -webkit-appearance: none;
+    width: 360px;
+    background-color: #f0f0f0;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;
+    height: 5px;
+}
+
+#time::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #e7c100;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#time::-webkit-slider-thumb:hover {
+    background-color: #F4CE14;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+
+#current-time, #duration {
+    width: 36px;
+    margin: 0 10px 0 10px;
+}
+
+
+
+
+
+
+/* плейлист */
+.playlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    background-color: #F4CE14;
+    border-radius: 5px;
+    width: 700px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+#playlist {
+    padding: 10px;
+    list-style-type: none;
+    font-size: larger;
+    font-weight:normal;
+}
+
+a {
+    text-decoration: none;
+    color:#45474B;
+}
+
+
+
+
+
+
+
+
+
+
+#visualizer {
+    background-color: #e7c100;
+}
